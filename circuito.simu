@@ -1,0 +1,71 @@
+<circuit version="1.0.0-RC3" rev="1148" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Nano-1" mainComp="false" Show_id="true" Show_Val="false" Pos="588,424" rotation="0" hflip="1" vflip="1" label="Nano-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_m328 TQFP-269" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_m328 TQFP-269" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Subcircuit" CircId="74HC164-2" mainComp="false" Show_id="true" Show_Val="false" Pos="708,464" rotation="0" hflip="1" vflip="1" label="74HC164-2" idLabPos="-26.1165,-30.8819" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="true" />
+
+<item itemtype="Led" CircId="Led-27" mainComp="false" Show_id="false" Show_Val="false" Pos="840,416" rotation="0" hflip="1" vflip="1" label="Led-27" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Rojo" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-28" mainComp="false" Show_id="false" Show_Val="false" Pos="840,440" rotation="0" hflip="1" vflip="1" label="Led-28" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Rojo" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-29" mainComp="false" Show_id="false" Show_Val="false" Pos="840,464" rotation="0" hflip="1" vflip="1" label="Led-29" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Rojo" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-30" mainComp="false" Show_id="false" Show_Val="false" Pos="840,488" rotation="0" hflip="1" vflip="1" label="Led-30" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Rojo" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-31" mainComp="false" Show_id="false" Show_Val="false" Pos="840,512" rotation="0" hflip="1" vflip="1" label="Led-31" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Rojo" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-32" mainComp="false" Show_id="false" Show_Val="false" Pos="840,536" rotation="0" hflip="1" vflip="1" label="Led-32" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Rojo" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-33" mainComp="false" Show_id="false" Show_Val="false" Pos="840,560" rotation="0" hflip="1" vflip="1" label="Led-33" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Rojo" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-34" mainComp="false" Show_id="false" Show_Val="false" Pos="840,584" rotation="0" hflip="1" vflip="1" label="Led-34" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Rojo" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="ResistorDip" CircId="ResistorDip-75" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="772,496" rotation="0" hflip="1" vflip="1" label="ResistorDip-75" idLabPos="-24,-40" labelrot="0" valLabPos="5,-26" valLabRot="90" Resistance="100 Ω" Size="8 _Resist." />
+
+<item itemtype="Node" CircId="Node-71" mainComp="false" Pos="704,472" />
+
+<item itemtype="Connector" uid="Connector-66" startpinid="74HC164-2-DA" endpinid="Node-71-0" pointList="700,472,704,472" />
+
+<item itemtype="Connector" uid="Connector-70" startpinid="74HC164-2-DB" endpinid="Node-71-1" pointList="700,480,700,472,704,472" />
+
+<item itemtype="Connector" uid="Connector-72" startpinid="Node-71-2" endpinid="Nano-1-A7" pointList="704,472,644,472" />
+
+<item itemtype="Connector" uid="Connector-73" startpinid="74HC164-2-Clk" endpinid="Nano-1-A6" pointList="700,512,680,512,680,480,644,480" />
+
+<item itemtype="Connector" uid="Connector-74" startpinid="74HC164-2-!Rst" endpinid="Nano-1-5V0" pointList="700,528,692,528,692,464,644,464" />
+
+<item itemtype="Connector" uid="Connector-79" startpinid="74HC164-2-Q7" endpinid="ResistorDip-75-resistor7-ePin14" pointList="748,528,756,528" />
+
+<item itemtype="Connector" uid="Connector-80" startpinid="74HC164-2-Q6" endpinid="ResistorDip-75-resistor6-ePin12" pointList="748,520,756,520" />
+
+<item itemtype="Connector" uid="Connector-81" startpinid="74HC164-2-Q5" endpinid="ResistorDip-75-resistor5-ePin10" pointList="748,512,756,512" />
+
+<item itemtype="Connector" uid="Connector-82" startpinid="74HC164-2-Q4" endpinid="ResistorDip-75-resistor4-ePin8" pointList="748,504,756,504" />
+
+<item itemtype="Connector" uid="Connector-83" startpinid="74HC164-2-Q3" endpinid="ResistorDip-75-resistor3-ePin6" pointList="748,496,756,496" />
+
+<item itemtype="Connector" uid="Connector-84" startpinid="74HC164-2-Q2" endpinid="ResistorDip-75-resistor2-ePin4" pointList="748,488,756,488" />
+
+<item itemtype="Connector" uid="Connector-85" startpinid="74HC164-2-Q1" endpinid="ResistorDip-75-resistor1-ePin2" pointList="748,480,756,480" />
+
+<item itemtype="Connector" uid="Connector-86" startpinid="74HC164-2-Q0" endpinid="ResistorDip-75-resistor0-ePin0" pointList="748,472,756,472" />
+
+<item itemtype="Connector" uid="Connector-87" startpinid="ResistorDip-75-resistor0-ePin1" endpinid="Led-27-lPin" pointList="788,472,788,416,824,416" />
+
+<item itemtype="Connector" uid="Connector-88" startpinid="ResistorDip-75-resistor7-ePin15" endpinid="Led-34-lPin" pointList="788,528,788,584,824,584" />
+
+<item itemtype="Connector" uid="Connector-89" startpinid="ResistorDip-75-resistor6-ePin13" endpinid="Led-33-lPin" pointList="788,520,796,520,796,560,824,560" />
+
+<item itemtype="Connector" uid="Connector-90" startpinid="ResistorDip-75-resistor1-ePin3" endpinid="Led-28-lPin" pointList="788,480,796,480,796,440,824,440" />
+
+<item itemtype="Connector" uid="Connector-91" startpinid="ResistorDip-75-resistor2-ePin5" endpinid="Led-29-lPin" pointList="788,488,804,488,804,464,824,464" />
+
+<item itemtype="Connector" uid="Connector-92" startpinid="ResistorDip-75-resistor5-ePin11" endpinid="Led-32-lPin" pointList="788,512,804,512,804,536,824,536" />
+
+<item itemtype="Connector" uid="Connector-93" startpinid="ResistorDip-75-resistor3-ePin7" endpinid="Led-30-lPin" pointList="788,496,812,496,812,488,824,488" />
+
+<item itemtype="Connector" uid="Connector-94" startpinid="ResistorDip-75-resistor4-ePin9" endpinid="Led-31-lPin" pointList="788,504,812,504,812,512,824,512" />
+
+</circuit>
